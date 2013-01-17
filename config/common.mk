@@ -86,6 +86,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit
 
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/$(TARGET_PRODUCT).conf:system/etc/beerbong/properties.conf
+
 # CM-specific init file
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/etc/init.local.rc:root/init.cm.rc
